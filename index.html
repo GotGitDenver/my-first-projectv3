@@ -37,8 +37,9 @@
         const away = game.teams.away.team.name;
         const home = game.teams.home.team.name;
 
-        const awayScore = game.teams.away.score ?? 0;
-        const homeScore = game.teams.home.score ?? 0;
+       const awayScore = game.linescore?.teams?.away?.runs ?? "-";
+       const homeScore = game.linescore?.teams?.home?.runs ?? "-";
+      
 
         const status = game.status.detailedState;
 
